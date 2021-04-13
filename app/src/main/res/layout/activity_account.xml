@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_foot"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="18dp"
+
+        android:background="@drawable/rounded_corner"
+        app:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/items_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/items" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/linar">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="133dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="133dp"-->
+<!--            android:layout_marginTop="87dp"-->
+
+<!--            android:layout_marginEnd="135dp"-->
+<!--            android:layout_marginBottom="75dp"-->
+<!--            android:text="Your account" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center"
+
+        android:text="Please Verify Your Email Adress"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        tools:text="Please Verify Your Email Adress" />
+
+
+    <Button
+        android:id="@+id/verifyemail"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/button"
+        android:text="Verify"
+        android:visibility="invisible" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/userprofule"
+        android:layout_marginEnd="105dp"
+       />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/AddT"
+
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="384dp"
+
+            android:text="TextView"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="318dp"
+
+            android:layout_marginBottom="394dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/PhoneT"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="504dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emaild"
+            android:layout_width="260dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="256dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="96dp"
+            android:text="LogOut"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
